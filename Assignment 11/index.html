@@ -1,0 +1,270 @@
+<!-- Assignment 11 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+</head>
+
+<body>
+
+    <script>
+
+        //  Task 1
+
+        // let firstName = prompt("Enter your first name")
+        // let lastName = prompt("Enter your last name")
+
+        // let fullName = firstName+ " " +lastName
+
+        // alert(`Welcome ${fullName}`)
+
+
+        // Task 2
+
+        // let mobile = prompt("Enter a mobile phone model")
+
+        // document.write(`My favourite phone is: ${mobile} <br>`)
+
+        // document.write(`Length of string: ${mobile.length}` )
+      
+
+        // Task 3
+
+        let CountryName = "Pakistani"
+
+        //  document.write(`String: ${CountryName} <br>`)
+
+        //  document.write(`Index of 'n': ${CountryName.indexOf('n')} `)
+
+
+        // Task 4
+
+        let greet = "Hello World"
+
+        // document.write(`String: ${greet} <br>`)
+        // document.write(`Last index of 'l': ${greet.lastIndexOf('l')} `)
+
+
+        // Task 5
+
+
+        //  document.write(`String: ${CountryName} <br>`)
+        //  document.write(`Character at index 3: ${CountryName.charAt(3)} `)
+
+
+        // Task 6
+
+        //  let firstName = prompt("Enter your first name")
+        // let lastName = prompt("Enter your last name")
+
+        // let fullName = firstName.concat(lastName)
+        // document.write(`Welcome ${fullName}`)
+
+
+        // Task 7
+
+        // let cityName = "Hyderabad"
+        // document.write(`City: ${cityName} <br>`)
+
+        // let cityChange = cityName.replace("Hyder", "Islam")
+        // document.write(`After replacement: ${cityChange}`)
+
+
+        // Task 8
+
+        let message = "Ali and Same are best friends. They play cricket and football together."
+
+        let newMessage = message.replaceAll("and", "&")
+
+        // document.write(`New message: ${newMessage}`)
+
+        // Task 9
+
+        // let string = "472"
+        // document.write(`Value: ${string} <br>`)
+
+        // document.write(`Type: ${typeof (string)} <br>`)
+
+        // let number = +string
+
+        // document.write(`Value: ${string} <br>`)
+
+        // document.write(`Type: ${typeof (number)}`)
+
+
+        // Task 10
+
+        // let userInput = prompt("Enter input","peanuts")
+
+        // document.write(`User input: ${userInput} <br>`)
+        // let newInput = userInput.toUpperCase()
+        // document.write(`Upper case: ${newInput}`)
+
+
+        // Task 12
+
+        let givenNumber = 33.56
+
+        // document.write(`Number: ${givenNumber} <br>`)
+
+        let numberInString = givenNumber.toString()
+         numberInString = numberInString.replace('.','')
+
+        // document.write(`Number: ${numberInString}`)
+
+
+
+        // Task 11
+
+        // let inputUser = 'javascript'
+
+        // inputUser = 
+
+
+
+        // Task 13
+
+        // let specialSymbol = ["@","!",".",","]
+
+        // let userName = prompt("Enter your name")
+        
+        // let found = false
+        // for(const symbol of specialSymbol){
+        //     if(userName.includes(symbol)){
+                
+        //         found = true
+        //         break
+        //     }
+        // }
+        // if(found){
+        //     document.write(`${userName}`)
+        //     alert(`Please enter a valid username`)
+        // }
+        // else{
+        //     document.write(`${userName}`)
+        // }
+
+
+
+        // Task 14
+
+        // with forof loop
+
+        const bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+        // let itemInput = prompt("Enter item")
+         
+        // let itemInputToLower = itemInput.toLowerCase()
+          
+        // let found = false
+
+
+        // for (const item of bakeryItems) {
+
+        //     if(itemInputToLower == item){
+        //          found = true
+        //           break
+        //     }
+            
+        // }
+        //  if(found){
+        //     console.log(`${itemInputToLower} is available at index ${bakeryItems.indexOf(itemInputToLower)}`);
+
+        // }
+        // else{
+        //     console.log(`We are sorry. ${itemInputToLower} is not available in our bakery `);
+
+        // }
+        
+
+        //   with for loop
+
+        // for(let i=0; i<bakeryItems.length; i++){
+        //     if(itemInputToLower == bakeryItems[i]){
+        //         found = true
+        //         break
+        //     }
+            
+        // }
+        // if(found){
+        //     console.log(`${itemInputToLower} is available at index ${bakeryItems.indexOf(itemInputToLower)}`);
+
+        // }
+        // else{
+        //     console.log(`We are sorry. ${itemInputToLower} is not available in our bakery `);
+
+        // }
+
+
+
+        // Task 15
+
+         const numbers = [/[0-9]/]
+         
+        //  const symbols = ['`','!','@','?',';',':','.','/','~','-','+','#','$','%','^','^','&','(','()',')','_','=']
+         const alpha = [/[a-z A-z]/]
+
+        let userPass = prompt("Enter Password")
+
+        if(userPass.length < 6 && !isNan(userPass[0])){
+            document.write(`Enter password: ${userPass} <br>`)
+            document.write(`password must at least 6 character long and shoudn't start with number <br> `)
+            document.write(`Please enter a valid password`)
+        }
+         else if(!isNaN(userPass[0])){
+            document.write(`Enter password: ${userPass} <br>`)
+             document.write(`Password can not begin with a number <br>`)
+             document.write(`Please enter a valid password`)
+        }
+        else{
+            document.write(`password is correct`)
+        }
+
+
+        // Task 16
+
+        let uniName = "University of Karachi"
+
+        let newUni = uniName.split("")
+        // document.write(`${newUni}`)
+        for(let i=0;i<newUni.length;i++){
+            // document.write(`${newUni[i]} <br>`)
+        }
+
+
+        // Task 17
+
+        // let inputUser = prompt("enter input")
+
+        // document.write(`User input: ${inputUser} <br>`)
+        // let newInputUser = inputUser.charAt(inputUser.length-1)
+        // document.write(`Last character of input ${newInputUser}`)
+         
+        
+        // Task 18
+
+        // let sentence = "The quick brown fox jumps over the lazy dog"
+        //  document.write(`Text: ${sentence} <br>`)
+        //  let lowerCaseSentence = sentence.toLowerCase()
+        // let word = lowerCaseSentence.split(' ')
+        
+        // let count = 0
+
+        // for(let i=0; i<word.length; i++){
+        //     if(word[i] === 'the'){
+        //         count++
+        //     }
+        // }
+        // document.write(`There are ${count} occurence(s) of word 'the'`)
+        
+
+        
+    </script>
+
+</body>
+
+</html>

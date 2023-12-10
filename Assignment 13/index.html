@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13</title>
+</head>
+<body>
+ <script>
+ 
+  // Task 1
+ let date = new Date()
+ document.write(`${date} <br>`)
+                 
+ // Dec 3 4:52pm
+
+ let dateStr = date.toString().slice(3,10)
+ document.write(`${dateStr} ${""}`)
+//  document.write(`${dateStr.slice(3,10)} `)
+
+
+ let hour = date.getHours()
+ let minutes = date.getMinutes()
+ 
+ let time = document.write(`${hour}: ${minutes}`)
+ 
+ if (hour >= 11)
+ {
+    document.write(` pm <br>`)  
+ }
+ else{
+    document.write(` am <br>`)
+ }
+
+
+ // Task 2
+
+
+const monthIndex = date.getMonth();
+
+const months = [
+  "January","February","March","April","May","June","July",
+  "August","September","October", "November","December",
+];
+
+const currentMonthName = months[monthIndex];
+
+document.write(`Current month: ${currentMonthName} <br>`);
+ 
+
+// Task 3
+
+let day = date.toString().slice(0,3)
+document.write(`Today is ${day} <br>`)
+
+
+// Task 4
+
+
+// const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+
+let funDay = date.getDay()
+
+if(funDay === 6 || funDay === 0){
+    document.write(`Its funday <br>`)
+}
+
+
+// Task 5
+
+
+let findDate = date.getDate()
+// document.write(`${findDate} <br>`)
+if(findDate < 16){
+    document.write(`first fifteen days of month`)
+}
+else{
+    document.write(`last fifteen days of month`)
+}
+
+
+
+// Task 6
+
+
+document.write(`<br> ${date}`)
+
+let setDate = new Date(1970, 0 , 1)
+// document.write(`<br> ${setDate}`)
+
+// let milli = setD.getMilliseconds()
+// document.write(`<br> ${milli}`)
+
+
+
+// Task 7
+
+
+document.write(`<br> ${date}`)
+
+let hours = date.getHours()
+
+if (hour > 11){
+    document.write(`<br> ${`It's PM`}`)
+}
+
+
+// Task 8
+
+
+let laterDate = new Date(2020, 11 , 31)
+
+document.write(`<br> ${laterDate}`)
+
+
+// Task 9
+
+
+let ramadanStart = new Date(2015, 5, 18)
+
+let today = new Date()
+document.write(`<br><br> ${today}`)
+
+let countDays = today - ramadanStart
+
+document.write(`<br> ${countDays}`)
+
+
+
+
+
+
+//  let d = new Date("Octoder 13,2014 11:13:00 ")
+//  document.write(`${d} <br>`)
+
+//  let da = new Date("2022-03-25")
+//  document.write(`${da} <br>`)
+
+//  let dat = new Date(2022, 9, 28 , 15, 25, 58, 33)
+//  document.write(`${dat}`)
+</script>
+
+    
+</body>
+</html>
